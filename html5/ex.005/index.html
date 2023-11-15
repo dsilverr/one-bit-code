@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+
+    <h1>Formulário de Inscrição</h1>
+
+    <form method="post">
+        <fieldset>
+            <legend>Preencha</legend>
+            <label for="iname">Nome:</label>
+            <input type="text" name="nome" id="iname" required autocomplete="off"><br><br>
+
+            <label for="imail">Email:</label>
+            <input type="email" name="email" id="imail" required autocomplete="off"> <br><br>
+
+            <label for="inum">WhatsApp:</label>
+            <input type="number" name="num" id="inum" required autocomplete="off" placeholder="(xx) xxxxx-xxxx">
+        </fieldset>
+
+        <fieldset>
+            <legend>Preencha</legend>
+
+            <label>Àrea de Atuação</label><br>
+            
+            <input type="radio" name="area" id="idev">
+            <label for="idev">Desenvolvimento</label>
+
+            <input type="radio" name="area" id="iqa">
+            <label for="iqa">Quality Assurance</label>
+
+            <input type="radio" name="area" id="iads">
+            <label for="iads">Analise de Dados</label>
+
+            <input type="radio" name="area" id="iif">
+            <label for="iif">Infraestrutura</label> <br> <br>
+
+
+            <label for="itext">Observações:</label><br>
+            <textarea name="text" id="itext" cols="30" rows="8" required placeholder="Fale um pouco sobre você"></textarea><br><br>
+
+            <label for="inovidade">Deseja receber novidadese ofertas por email.</label> <br>
+            <input type="checkbox" name="novidade" id="inovidade"> <br> <br>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+
+
+
+
+    </form>
+    
+</body>
+</html>
