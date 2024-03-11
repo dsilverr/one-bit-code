@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+nav{
+    margin: 8px ;
+}
+
+h1{
+    color: white;
+    font-size: 5.3em;
+}
+
+p{
+    display: inline;
+    color: white;
+    margin: 5px;
+    text-align: right;
+}
+
+main  p {
+    text-align:left ;
+    margin-top: auto;
+}
+
+footer {
+  margin-top: auto;
+}
+
+input{
+    border-style: none;
+    border-radius: 15px
+}
