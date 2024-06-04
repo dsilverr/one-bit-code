@@ -35,7 +35,7 @@ function novaVaga() {
 
     if(confirmação){
         const novaVaga = {nome, descricao, datalimite, candidatos: []}
-        vagas.push()
+        vagas.push(novaVaga)
         alert("Vaga criada")
     }
 }
