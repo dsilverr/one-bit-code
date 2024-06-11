@@ -146,7 +146,7 @@ function executar() {
                 break;
         }
         
-    } while (opcao !== 6);
+    } while (exibirMenu() !== 6);
 
 }
 

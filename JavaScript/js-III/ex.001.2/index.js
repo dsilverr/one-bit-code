@@ -1,4 +1,4 @@
-//Escalação do Time
+// ### Escalação do Time
 // Construa uma página web que permita montar a escalação de um time de jogadores. Nele deverá ser possível:
 // - Escalar um jogador
 //     - Informar a posição do jogador a ser escalado para o time.
@@ -12,7 +12,8 @@
 //     - Após o jogador ser removido o campo de texto deve ser limpo.
 // Dica: lembrando que é possível acessar o texto de um input através da propriedade value.
 
-function escalar() {
+
+function addPlayer() {
 
     const position = document.getElementById('iposicao').value
     const name = document.getElementById('inome').value
@@ -30,17 +31,22 @@ function escalar() {
         document.getElementById('position').value = ''
         document.getElementById('name').value = ''
         document.getElementById('number').value = ''
+    }else {
+        alert('Jogador não escalado')
     }
+
 }
 
-function remover() {
-    const number = document.getElementById('irnumero').value
-    const playerToRemove = document.getElementById('palyer-' + number)
+function removePlayer() {
 
-    const confirmation = confirm('Remover jogador: ' + playerToRemove + ' ?' )
+    const number = document.getElementById('rumber')
+    const playerToRemove = document.getElementById('player-' + number)
+
+    const confirmation = confirm('Remover jogador: ' + playerToRemove + ' ?')
 
     if(confirmation) {
-        document.getElementById('time').removeChild(playerToRemove)
-        document.getElementById('irnumero').value = ''
+        playerToRemove.remove()
+        document.getElementById('rnumber').value = ''
     }
+
 }

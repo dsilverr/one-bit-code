@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <title>DOM em formulários</title>
+</head>
+<body>
+
+    <H1>Trabalhando com formulários</H1>
+
+    <h3>Montando pedido</h3>
+    <form id="orderForm">
+
+        <label for="name">Nome: </label> <br>
+        <input type="text" id="name" name="name" size="20px"><br><br>
+
+        <label for="address">Endereço de entraga: </label><br>
+        <input type="text" id="address" name="address" size="20px"><br><br>
+
+        <label for="bread">Tipo de pão</label><br>
+        <select id="bread" name="bread">
+            <option selected disabled>Escolha uma opção</option>
+            <option value="3 queijos">3 Queijos</option>
+            <option value="parmesão">parmesão</option>
+            <option value="australiano">australiano</option>
+            <option value="brioche">brioche</option>            
+        </select><br><br>
+
+        <label for="meat">Carne:</label><br>
+        <input type="radio" id="meat1" name="meat"> 
+        <label for="meat1">Boi</label>
+        <input type="radio" name="meat" id="meat2">
+        <label for="meat2">Frango</label>
+        <input type="radio" name="meat" id="meat3">
+        <label for="meat3">Peixe</label> <br><br>
+
+        <label for="salad">Salada:</label>
+        <input type="checkbox" name="salad" id="salad1"  >
+        <label for="salad1">Alface</label>
+        <input type="checkbox" name="salad" id="salad2">
+        <label for="salad2">Tomate</label>
+        <input type="checkbox" name="salad" id="salad3">
+        <label for="salad3">Cebola</label><br><br>
+
+        <label for="observations">Observações: </label> <br>
+        <textarea name="observations" id="observations" id="observations" cols="30" rows="10"></textarea><br><br>
+
+        <button id="close">Fechar pedido</button>
+
+
+
+    </form>
+    
+</body>
+</html>
