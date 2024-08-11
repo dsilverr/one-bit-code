@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+   <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main data-theme="dark">
+        <header class="flex align-center justify-between">
+            <h1>Calculadora pika 2.0</h1>
+            <button id="themeSwitcher" >Switch Theme</button>
+        </header>
+
+        <input type="text" id="input">
+
+        <d id="keys">
+
+            <button class="charKey" data-value=" ( " >(</button>
+            <button class="charKey" data-value=" ) " >)</button>
+            <button class="charKey" data-value=" % " >mod</button>
+            <button id="clear">AC</button>
+            <button class="charKey" data-value="7" id="sete">7</button>
+            <button class="charKey" data-value="8" id="oito">8</button>
+            <button class="charKey" data-value="9" id="nove">9</button>
+            <button class="charKey" data-value=" / " >/</button>
+            <button class="charKey" data-value="4" id="quatro">4</button>
+            <button class="charKey" data-value="5" id="cinco">5</button>
+            <button class="charKey" data-value="6" id="seis">6</button>
+            <button class="charKey" data-value=" * " >*</button>
+            <button class="charKey" data-value="1" id="um">1</button>
+            <button class="charKey" data-value="2" id="dois">2</button>
+            <button class="charKey" data-value="3" id="tres">3</button>
+            <button class="charKey" data-value=" - " >-</button>
+            <button class="charKey" data-value="0" id="zero">0</button>
+            <button class="charKey" data-value="." id="ponto">.</button>
+            <button id="equal">=</button>
+            <button class="charKey" data-value=" + " >+</button>
+        </div>
+        <section class="flex align-center justify-between">
+            <button id="copyToClipboard">Copy</button>
+            <input type="text" id="result" disabled>
+        </section>
+    </main>
+
+    
+</body>
+</html>
